@@ -16,20 +16,20 @@ zanr_id integer primary key,
 zanr text not null
 )
 
-commit ;
-
 insert into kniha(nazev, autor, zanr, pocet_stranek)
 values
-    ('Spalovač mrtvol', 1, 1, 144),
-    ('Pejsek a kočička', 2, 2, 120)
+    ('Halloween', 1, 1, 144),
+    ('Friday the 13th', 2, 2, 120)
 
 
 insert into zanr(zanr) 
 values
-    ('Román'),
-    ('Pohádka')
+    ('Horror'),
+    ('Thriller')
 
 insert into autor(fullname)
 values 
-    ('Ladislav Fuks'),
-    ('Josef Čapek')
+    ('Týpek1'),
+    ('Týpek2')
+    
+commit ;
