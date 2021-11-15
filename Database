@@ -33,18 +33,3 @@ insert into autor(fullname)
 values 
     ('Ladislav Fuks'),
     ('Josef Čapek')
-
-select *
-from kniha
-
-select *
-from autor
-
-select *
-from zanr
-select kniha.autor, autor.fullname
-from kniha
-left join autor
-on autor = autor_id
-
-delete from kniha where kniha_id = 2 or 3;  
